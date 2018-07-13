@@ -4,7 +4,7 @@ import Config from './Config'
 import Notify from './Notify'
 import Status from './Status'
 import DataList from './DataList'
-import ExportPanel from './ExportPanel'
+import Export from './Export'
 const Main = () => {
     return (
         <div className="Main" style={style}>
@@ -12,7 +12,7 @@ const Main = () => {
             <Notify />
             <Status />
             <DataList />
-            <ExportPanel />
+            <Export />
         </div>
      )
 }
