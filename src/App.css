@@ -1,3 +1,7 @@
+* {
+  border: dotted` 1px red;
+}
+
 .App {
   text-align: center;
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import './Config.css'
 
 const Config = () => {
     return(

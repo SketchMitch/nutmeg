@@ -1,0 +1,8 @@
+.Config {
+    width: 12rem;
+    background-color: lightblue;
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
