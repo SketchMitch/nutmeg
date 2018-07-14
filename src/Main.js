@@ -1,7 +1,9 @@
 import React, {Component}from 'react'
 
 import SideBar from './SideBar'
-import Pane from './Pane'
+import Status from './Status'
+import DataList from './DataList'
+import Export from './Export'
 
 class Main extends Component {
     constructor() {
@@ -10,19 +12,31 @@ class Main extends Component {
     
     render() {
         return (
-            <div className="Main" style={style}>
+            <div className="Main" style={main}>
                 <SideBar />
-                <Pane />
+                <div className='Pane' style={pane} >
+                    <Status />
+                    <DataList />
+            <       Export />
+                </div>
             </div>
         )
     }
 }
               
-const style = {
+const main = {
     display: 'flex',
     height: '100vh',
     alignItems: 'stretch',
     color: '#0000ff',
+}
+
+const pane = {
+    width: '80%',
+    backgroundColor: '#ADD8E6',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
 }
 
 export default Main
