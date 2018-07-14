@@ -1,18 +1,20 @@
 import React from 'react'
-import Config from './Config'
-import Notify from './Notify'
+import Status from './Status'
+import DataList from './DataList'
+import Export from './Export'
 
 const SideBar = () => {
     return(
         <div className='SideBar' style={style} >
-            <Config />
-            <Notify />
+            <Status />
+            <DataList />
+            <Export />
         </div>
     )
 }
 
 const style = {
-    width: '16rem',
+    width: '80%',
     backgroundColor: '#ADD8E6',
     display: 'flex',
     flexDirection: 'column',

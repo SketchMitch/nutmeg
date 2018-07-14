@@ -1,9 +1,7 @@
 import React, {Component}from 'react'
 
 import SideBar from './SideBar'
-import Status from './Status'
-import DataList from './DataList'
-import Export from './Export'
+import Pane from './Pane'
 
 class Main extends Component {
     constructor() {
@@ -14,9 +12,7 @@ class Main extends Component {
         return (
             <div className="Main" style={style}>
                 <SideBar />
-                <Status />
-                <DataList />
-                <Export />
+                <Pane />
             </div>
         )
     }
