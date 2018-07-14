@@ -1,9 +1,9 @@
 import React from 'react'
 
-const DataList = () => {
+const DataList = ({data}) => {
     return(
         <div className="DataList" style={style} >
-            DataList
+            {JSON.stringify( data ) }
         </div>
     )
 }
