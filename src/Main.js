@@ -1,7 +1,6 @@
 import React, {Component}from 'react'
 
-import Config from './Config'
-import Notify from './Notify'
+import SideBar from './SideBar'
 import Status from './Status'
 import DataList from './DataList'
 import Export from './Export'
@@ -14,8 +13,7 @@ class Main extends Component {
     render() {
         return (
             <div className="Main" style={style}>
-                <Config />
-                <Notify />
+                <SideBar />
                 <Status />
                 <DataList />
                 <Export />

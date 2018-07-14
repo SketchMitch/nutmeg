@@ -1,4 +1,5 @@
 import React from 'react'
+import './Notify.css'
 
 const Notify = () => {
     return(
