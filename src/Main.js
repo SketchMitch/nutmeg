@@ -5,11 +5,16 @@ import Status from './Status'
 import DataList from './DataList'
 import Export from './Export'
 
+
 class Main extends Component {
     constructor() {
         super()
 
         this.state = {
+            config: {
+                asin: '',
+                interval: '1 min',
+            },
             data: {
                 timestamp: "07/14/2018 11:49:30",
                 asin: "B01CD5VC92",
@@ -19,13 +24,17 @@ class Main extends Component {
             }
         }
     }
+
+    saveConfig = ( config ) => {
+        this.state( config: config )
+    }
     
     render() {
         return (
             <div className="Main" style={main}>
-                <SideBar />
+                <SideBar asin={this.state.config}  saveConfig={this.saveConfig} />
                 <div className='Pane' style={pane} >
-                    <Status />
+                    <Status asin={this.state.params} />
                     <DataList data={this.state.data} />
             <       Export />
                 </div>

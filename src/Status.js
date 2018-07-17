@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Status = () => {
+const Status = (params) => {
     return(
         <div className="Status" style={style}>
-            Status
+           ASIN: {params.asin}
         </div>
     )
 }

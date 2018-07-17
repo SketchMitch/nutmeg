@@ -3,7 +3,7 @@ import React from 'react'
 const DataList = ({data}) => {
     return(
         <div className="DataList" style={style} >
-            {JSON.stringify( data ) }
+            { JSON.stringify( data ) }
         </div>
     )
 }
