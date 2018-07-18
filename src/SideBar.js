@@ -12,7 +12,7 @@ const SideBar = ( config, saveConfig ) => {
 }
 
 const style = {
-    width: '16rem',
+    width: '22rem',
     backgroundColor: '#ADD8E6',
     display: 'flex',
     flexDirection: 'column',

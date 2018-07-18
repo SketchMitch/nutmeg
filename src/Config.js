@@ -17,29 +17,32 @@ const Config = ( config, saveConfig  ) => {
         <div className="Config">
             <form>
                 <p>
-                    <div className="asin-label">ASIN:</div>
-                    <input
-                        type="text"
-                        name="ASIN" 
-                        placeholder={"ASIN to search"}
-                        value={ config.asin } 
-                        onChange={handleChange}/>
-                    
-                    
-                    <div className="interval-label">Interval:</div>
-                    <select name="interval">
-                        { timeFrames.map( op => <option key={op.id} value={op.value} >{op.title}</option> ) }
-                    </select>    
-                    
-                    <a href="#" 
-                        className="config-submit"
-                        onClick={(ev) => { 
-                            ev.preventDefault() 
-                            alert( 'submit query' )}
-                        }>
-                        <img src={ newIcon } alt='submit' />
-                    </a>
+                    <div className="label">ASIN:</div>
                 </p>
+                
+                <input
+                    type="text"
+                    name="asin" 
+                    placeholder={"Enter ASIN"}
+                    value={ config.asin } 
+                    onChange={handleChange} />
+                
+                <p>
+                    <div className="label">Interval:</div>
+                </p>
+                
+                <select name="interval">
+                    { timeFrames.map( op => <option key={op.id} value={op.value} >{op.title}</option> ) }
+                </select>    
+                
+                <a href="#" 
+                    className="config-submit"
+                    onClick={(ev) => { 
+                        ev.preventDefault() 
+                        alert( 'submit query' )}
+                    }>
+                    <img src={ newIcon } alt='submit' />
+                </a>
             </form>
         </div>
     )

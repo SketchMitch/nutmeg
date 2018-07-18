@@ -13,7 +13,7 @@ const timeFrames = [
         },
         {
             id: 2,
-            title: "60 sec", 
+            title: "1 min", 
             value: 60,
         },
         {

@@ -1,7 +1,43 @@
 .Config {
     width: 90%;
     height: 55vh;
-    margin: 1rem 0;
     padding: 0.5rem 0;
     background-color: lightgrey;
+
+    font-size: 125%;
+    font-family: Fauna One;
+    font-weight: 400;
+}
+
+.Config p {
+    margin: 15px 0 0 0;
+    padding: 5px 0px;
+}
+
+.Config .label {
+    text-align: left;
+    padding: .2rem .5rem;
+}
+
+.Config input[name=asin] {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 110%;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.Config select[name=interval] {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 110%;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.Config  .config-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
 }

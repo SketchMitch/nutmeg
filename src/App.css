@@ -1,5 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Fauna+One|Oxygen:300,400,700);
+
 * {
-  border: dotted` 1px red;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: dotted 1px red;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 14px;
+  line-height: 1.42857143;
+  margin: 0;
+  margin: 0 auto;
+  min-width: 30rem;
 }
 
 .App {

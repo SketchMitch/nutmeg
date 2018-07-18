@@ -51,7 +51,7 @@ const main = {
 }
 
 const pane = {
-    width: '80%',
+    width: '90%',
     backgroundColor: '#ADD8E6',
     display: 'flex',
     flexDirection: 'column',
