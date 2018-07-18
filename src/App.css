@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Fauna+One|Oxygen:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Fauna+One|Dancing+Script:400,700|Oxygen:300,400,700);
 
 * {
   -webkit-box-sizing: border-box;
@@ -8,6 +8,7 @@
 html {
   font-size: 10px;
 }
+
 body {
   font-size: 14px;
   line-height: 1.42857143;
@@ -21,5 +22,12 @@ body {
 }
 
 .App-header {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  font-weight: 700;
+  //height: 10rem;
+  margin: 0;
+  padding: 0;
+  color: #666;   
   background-color: #999
 }

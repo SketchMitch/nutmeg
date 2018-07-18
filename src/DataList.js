@@ -15,9 +15,9 @@ const DataList = ({ data }) => {
                         <th>Seller</th>
                     </tr>
                     {
-                        data.map((res) => {
+                        data.map((res, i) => {
                             return (
-                                <tr key="res.timestamp">
+                                <tr key={ i }>
                                     <td>{res.timestamp}</td>
                                     <td>{res.asin} </td>
                                     <td>{res.title}</td>

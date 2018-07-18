@@ -2,10 +2,10 @@ import React from 'react'
 import Config from './Config'
 import Notify from './Notify'
 
-const SideBar = ( config, saveConfig ) => {
+const SideBar = ({ config, saveConfig, run }) => {
     return(
         <div className='SideBar' style={style} >
-            <Config config={ config } saveConfig={ saveConfig } />
+            <Config config={ config } saveConfig={ saveConfig } run={run} />
             <Notify />
         </div>
     )
