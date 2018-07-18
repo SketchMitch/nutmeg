@@ -1,6 +1,11 @@
 
 
 const timeFrames = [
+        {  
+            id: 99,
+            title: "5 sec", 
+            value: 5,
+        },
         {
             id: 0,
             title: "15 sec", 
