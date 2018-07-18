@@ -22,7 +22,7 @@ class Main extends Component {
                 price: "$39.00",
                 seller:"CanaKit",
             },
-            status: "",
+            status: "System Ready to Search",
         }
     }
 

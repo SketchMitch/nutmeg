@@ -17,7 +17,7 @@ const Config = ( config, saveConfig  ) => {
         <div className="Config">
             <form>
                 <p>
-                    <div className="label">ASIN:</div>
+                    <span className="label">ASIN:</span>
                 </p>
                 
                 <input
@@ -28,7 +28,7 @@ const Config = ( config, saveConfig  ) => {
                     onChange={handleChange} />
                 
                 <p>
-                    <div className="label">Interval:</div>
+                    <span className="label">Interval:</span>
                 </p>
                 
                 <select name="interval">
