@@ -7,7 +7,7 @@ const DataList = ({ data }) => {
         <div className="DataList" style={style} >
             <table>
                 <tbody>
-                    <tr>
+                    <tr className="labels">
                         <th>Time</th>
                         <th>ASIN</th>
                         <th>Title</th>
