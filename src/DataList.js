@@ -1,14 +1,22 @@
 import React from 'react'
+import './DataList.css'
 
-const DataList = ( {data} ) => {
+const DataList = ({ data }) => {
 
-return(
+    return (
         <div className="DataList" style={style} >
             <table>
                 <tbody>
-                    { 
-                       data.map( ( res ) => { 
-                           return (
+                    <tr>
+                        <th>Time</th>
+                        <th>ASIN</th>
+                        <th>Title</th>
+                        <th>Price</th>                    
+                        <th>Seller</th>
+                    </tr>
+                    {
+                        data.map((res) => {
+                            return (
                                 <tr key="res.timestamp">
                                     <td>{res.timestamp}</td>
                                     <td>{res.asin} </td>
@@ -18,7 +26,7 @@ return(
                                 </tr>
                             )
                         })
-                    } 
+                    }
                 </tbody>
             </table>
         </div>

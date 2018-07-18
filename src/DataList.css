@@ -1,0 +1,19 @@
+.DataList table {
+    
+    
+    width: 100%;
+    max-height: 90%;
+    
+}
+
+.DataList {
+    
+    display: inline-block;
+    overflow: scroll;
+    
+    
+}
+
+
+
+
