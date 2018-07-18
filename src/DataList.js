@@ -1,9 +1,26 @@
 import React from 'react'
 
-const DataList = ({data}) => {
-    return(
+const DataList = ( {data} ) => {
+
+return(
         <div className="DataList" style={style} >
-            { JSON.stringify( data ) }
+            <table>
+                <tbody>
+                    { 
+                       data.map( ( res ) => { 
+                           return (
+                                <tr key="res.timestamp">
+                                    <td>{res.timestamp}</td>
+                                    <td>{res.asin} </td>
+                                    <td>{res.title}</td>
+                                    <td>{res.price}</td>
+                                    <td>{res.seller}</td>
+                                </tr>
+                            )
+                        })
+                    } 
+                </tbody>
+            </table>
         </div>
     )
 }

@@ -35,7 +35,7 @@ const Config = ( config, saveConfig  ) => {
                     { timeFrames.map( op => <option key={op.id} value={op.value} >{op.title}</option> ) }
                 </select>    
                 
-                <a href="#" 
+                <a href="/" 
                     className="config-submit"
                     onClick={(ev) => { 
                         ev.preventDefault() 

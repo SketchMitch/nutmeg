@@ -5,6 +5,8 @@ import Status from './Status'
 import DataList from './DataList'
 import Export from './Export'
 
+import samples from './samples'
+
 
 class Main extends Component {
     constructor() {
@@ -15,13 +17,7 @@ class Main extends Component {
                 asin: '',
                 interval: '1 min',
             },
-            data: {
-                timestamp: "07/14/2018 11:49:30",
-                asin: "B01CD5VC92",
-                title: "Raspberry Pi 3 Model B Motherboard",
-                price: "$39.00",
-                seller:"CanaKit",
-            },
+            data: samples,
             status: "System Ready to Search",
         }
     }

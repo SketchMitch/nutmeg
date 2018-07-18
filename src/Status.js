@@ -1,7 +1,7 @@
 import React from 'react'
 import './Status.css'
 
-const Status = (  ) => {
+const Status = ( status  ) => {
     return(
         <div className="Status" >
             <p>
