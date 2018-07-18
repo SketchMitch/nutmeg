@@ -1,0 +1,29 @@
+
+
+.Status {
+    width: 90%;
+    height: 10vh;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    background-color: lightgrey;
+
+    font-size: 125%;
+    font-family: Fauna One;
+    font-weight: 400;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.label {
+    margin: 0;
+}
+
+.static {
+    width: 15rem;
+}
+
+.pause {
+    align-items: flex-end;
+}

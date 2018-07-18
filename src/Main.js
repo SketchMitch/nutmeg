@@ -21,7 +21,8 @@ class Main extends Component {
                 title: "Raspberry Pi 3 Model B Motherboard",
                 price: "$39.00",
                 seller:"CanaKit",
-            }
+            },
+            status: "",
         }
     }
 
@@ -34,7 +35,7 @@ class Main extends Component {
             <div className="Main" style={main}>
                 <SideBar asin={this.state.config}  saveConfig={this.saveConfig} />
                 <div className='Pane' style={pane} >
-                    <Status asin={this.state.params} />
+                    <Status status={this.state.status} />
                     <DataList data={this.state.data} />
             <       Export />
                 </div>
