@@ -4,16 +4,23 @@ import './DataList.css'
 const DataList = ({ data }) => {
 
     return (
-        <div className="DataList" style={style} >
+        <div className="DataList">
             <table>
+                <thead id="labels">
+                <th>Time</th>
+                        <th>ASIN</th>
+                        <th>Title</th>
+                        <th>Price</th>                    
+                        <th>Seller</th>
+                </thead>
                 <tbody>
-                    <tr className="labels">
+                    {/* <tr className="labels">
                         <th>Time</th>
                         <th>ASIN</th>
                         <th>Title</th>
                         <th>Price</th>                    
                         <th>Seller</th>
-                    </tr>
+                    </tr> */}
                     {
                         data.map((res, i) => {
                             return (
@@ -31,14 +38,6 @@ const DataList = ({ data }) => {
             </table>
         </div>
     )
-}
-
-const style = {
-    width: '90%',
-    height: '50vh',
-    margin: '1rem 0',
-    padding: '0.5rem 0',
-    backgroundColor: 'lightgrey',
 }
 
 export default DataList
