@@ -5,8 +5,8 @@ import Status from './Status'
 import DataList from './DataList'
 import Export from './Export'
 
-//import axios from 'axios';
-import samples from './samples'
+import axios from 'axios';
+//import samples from './samples'
 
 
 class Main extends Component {
@@ -15,7 +15,7 @@ class Main extends Component {
 
         this.state = {
             config: this.newConfig(),
-            data: samples,
+            data: [],
             status: "System Ready to Search",
         }
     }
@@ -49,14 +49,27 @@ class Main extends Component {
 
     queryASIN = async  ( ) => {
         try {
-            await console.log( this.state.config.asin + ' - just sent async request!' )
-            
-            //await axios.call(),
-            
-            
+            //await console.log( this.state.config.asin + ' - just sent async request!' )
+            //const url = 'http://localhost:3001/scrape/' + this.state.config.asin
+            const url = 'https://asin-trac.herokuapp.com/scrape/' + this.state.config.asin
+            await axios.get( url )
+                .then(( response ) => {
+                    // handle success
+                    console.log(response);
+                    const tmpData = [...this.state.data]
+                    tmpData.unshift( response.data[0] )
+                    this.setState({ data: tmpData })
+                })
+                .catch(( error ) => {
+                    // handle error
+                    console.log(error);
+                    this.pauseProc()
+                })
+
         } catch(  error ) {
             const tmpStatus = error
             this.setState({ status: tmpStatus })
+            this.pauseProc()
             console.log( error )
         }
     }
