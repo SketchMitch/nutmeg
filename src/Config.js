@@ -31,7 +31,7 @@ const Config = ( { config, saveConfig, run }  ) => {
                     <span className="label">Interval:</span>
                 </p>
                 
-                <select name="interval" defaultValue={config.interval} onChange={this.handleChange}  >
+                <select name="interval" defaultValue={config.interval} onChange={handleChange}  >
                     { timeFrames.map( op => <option key={op.id} value={op.value} >{op.title}</option> ) }
                 </select>    
                 
