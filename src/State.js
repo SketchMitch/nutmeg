@@ -7,4 +7,4 @@ const State = {
     ERROR: "App error",
 }
 
-export default STAT
+export default State
