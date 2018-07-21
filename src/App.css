@@ -3,7 +3,7 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border: dotted 1px red;
+  /* border: dotted 1px red; */
 }
 
 html {
@@ -31,7 +31,7 @@ body {
   margin: 0;
   padding: 0;
   color: #666;   
-  background-color: #999
+  background-color: #999;
 }
 
 .App h1 {
