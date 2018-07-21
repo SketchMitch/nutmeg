@@ -55,9 +55,11 @@ class Main extends Component {
             await axios.get( url )
                 .then(( response ) => {
                     // handle success
-                    console.log(response);
                     const tmpData = [...this.state.data]
-                    tmpData.unshift( response.data[0] )
+                    response.data.reverse().map( ( product ) => { 
+                        return tmpData.unshift( product ) 
+                    }) 
+                    
                     this.setState({ data: tmpData })
                 })
                 .catch(( error ) => {
