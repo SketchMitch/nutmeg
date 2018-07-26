@@ -69,10 +69,9 @@ height:100%;
 }
 
 .DataList table {
-        border-collapse: collapse;
-        background-color: none;
-         width: 100%;
-         
+    border-collapse: collapse;
+    background-color: none;
+    width: 100%;     
 }
 
 .DataList thead {
