@@ -1,10 +1,11 @@
 
 
 .Status {
+    border: solid 2px red;
+
     width: 90%;
-    height: 10vh;
-    margin: 1rem 0;
-    padding: 0.5rem 0;
+    margin: .5rem 0;
+    padding: 0.75rem 0;
     background-color: lightgrey;
 
     font-size: 125%;
@@ -16,14 +17,13 @@
     align-items: center;
 }
 
-.label {
+.Status .label {
+    border: solid 2px red;
+
     margin: 0;
+    padding: .5rem;
 }
 
 .static {
     width: 15rem;
-}
-
-.pause {
-    align-items: flex-end;
 }

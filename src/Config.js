@@ -3,9 +3,7 @@ import './Config.css'
 
 import timeFrames from './timeFrames'
 
-import newIcon from './assets/media/new.png'
-
-const Config = ( { config, saveConfig, run }  ) => {
+const Config = ( { config, saveConfig }  ) => {
 
     const handleChange = ( ev ) => {
         const tmpConfig = { ...config }
@@ -33,19 +31,21 @@ const Config = ( { config, saveConfig, run }  ) => {
                 
                 <select name="interval" defaultValue={config.interval} onChange={handleChange}  >
                     { timeFrames.map( op => <option key={op.id} value={op.value} >{op.title}</option> ) }
-                </select>    
-                
-                <a href="/" 
-                    className="config-submit"
-                    onClick={(ev) => { 
-                        ev.preventDefault() 
-                        run()
-                    }}>
-                    <img src={ newIcon } alt='submit' />
-                </a>
+                </select>                    
             </form>
         </div>
     )
 }
 
 export default Config
+
+/*
+<a href="/" 
+    className="config-submit"
+    onClick={(ev) => { 
+        ev.preventDefault() 
+        run()
+    }}>
+    <img src={ newIcon } alt='submit' />
+</a>
+*/

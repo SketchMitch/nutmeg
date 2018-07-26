@@ -1,7 +1,7 @@
 import React from 'react'
 import './Status.css'
 
-const Status = ( { status, asin, pause }  ) => {
+const Status = ( { status, asin }  ) => {
     return(
         <div className="Status" >
             <p>
@@ -11,9 +11,6 @@ const Status = ( { status, asin, pause }  ) => {
             <p>
                 <span className="label" >ASIN:</span>
                 <span className="static" >{asin}</span>
-            </p>
-            <p>
-                <button className="btn pause" onClick={pause} >Pause</button>
             </p>
         </div>
     )

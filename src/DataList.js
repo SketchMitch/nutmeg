@@ -7,11 +7,13 @@ const DataList = ({ data }) => {
         <div className="DataList">
             <table>
                 <thead id="labels">
-                <th>Time</th>
+                    <tr>
+                        <th>Time</th>
                         <th>ASIN</th>
                         <th>Title</th>
                         <th>Price</th>                    
                         <th>Seller</th>
+                    </tr>
                 </thead>
                 <tbody>
                     {/* <tr className="labels">

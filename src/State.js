@@ -1,9 +1,10 @@
-u
+
 
 const State = {
-    READY: "App is ready for input",
-    RUNNING: "App is watching ASIN ",
-    PAUSE: "Moniter is paused",
+    READY: "App is ready",
+    PLAY: "App is playing ",
+    PAUSE: "App is paused",
+    STOP: "App is stopped",
     ERROR: "App error",
 }
 

@@ -1,6 +1,8 @@
 .Config {
+    border: solid 2px red;
+        
     width: 90%;
-    height: 55vh;
+    height: 30vh;
     padding: 0.5rem 0;
     background-color: lightgrey;
 
@@ -10,12 +12,12 @@
 }
 
 .Config p {
-    margin: 15px 0 0 0;
-    padding: 5px 0px;
+   // margin: 15px 0;
+   // padding: 5px 0px;
 }
 
 .Config .label {
-    //float: left;
+    float: left;
     padding: .2rem .5rem;
 }
 
