@@ -14,38 +14,30 @@ const Config = ( { config, saveConfig }  ) => {
     return(
         <div className="Config">
             <form>
-                <p>
-                    <span className="label">ASIN:</span>
-                </p>
-                
-                <input
-                    type="text"
-                    name="asin" 
-                    placeholder={'Enter ASIN'}
-                    value={ config.asin } 
-                    onChange={handleChange} />
-                
-                <p>
-                    <span className="label">Interval:</span>
-                </p>
-                
-                <select name="interval" defaultValue={config.interval} onChange={handleChange}  >
-                    { timeFrames.map( op => <option key={op.id} value={op.value} >{op.title}</option> ) }
-                </select>                    
+                <div class="row">
+                    <div class="large-12 columns clearfix">
+                        <label className="float-left" >ASIN:
+                            <input
+                                type="text"
+                                name="asin" 
+                                placeholder={'Enter ASIN'}
+                                value={ config.asin } 
+                                onChange={handleChange} />
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <label>Interval:
+                            <select name="interval" defaultValue={config.interval} onChange={handleChange}  >
+                                { timeFrames.map( op => <option key={op.id} value={op.value} >{op.title}</option> ) }   
+                            </select>
+                        </label>
+                    </div>
+                </div>
             </form>
         </div>
     )
 }
 
 export default Config
-
-/*
-<a href="/" 
-    className="config-submit"
-    onClick={(ev) => { 
-        ev.preventDefault() 
-        run()
-    }}>
-    <img src={ newIcon } alt='submit' />
-</a>
-*/
