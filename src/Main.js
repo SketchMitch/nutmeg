@@ -25,13 +25,12 @@ class Main extends Component {
     componentDidMount() {
         const tmpStatus = State.READY
         this.setState({ status: tmpStatus})
-        //console.log( this.state.status )
     }
 
     newConfig = () => {
         return { 
             asin: '',
-            interval: 5,
+            interval: 600,
         }
     }
 
@@ -130,17 +129,18 @@ class Main extends Component {
               
 const main = {
     display: 'flex',
-    height: '100vh',
+    height: '90vh',
     // alignItems: 'stretch',
     color: '#0000ff',
 }
 
 const pane = {
-    width: '90%',
+    position: 'relative',
+    width: '80%',
     backgroundColor: '#ADD8E6',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
+    alignItems: 'left',
 }
 
 export default Main

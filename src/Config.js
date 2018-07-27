@@ -16,7 +16,7 @@ const Config = ( { config, saveConfig }  ) => {
             <form>
                 <div class="row">
                     <div class="large-12 columns clearfix">
-                        <label className="float-left" >ASIN:
+                        <label className="" >ASIN:
                             <input
                                 type="text"
                                 name="asin" 
@@ -29,7 +29,7 @@ const Config = ( { config, saveConfig }  ) => {
                 <div class="row">
                     <div class="large-12 columns">
                         <label>Interval:
-                            <select name="interval" defaultValue={config.interval} onChange={handleChange}  >
+                            <select name="interval" defaultValue={config.interval} onChange={handleChange} >
                                 { timeFrames.map( op => <option key={op.id} value={op.value} >{op.title}</option> ) }   
                             </select>
                         </label>

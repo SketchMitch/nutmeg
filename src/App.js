@@ -19,8 +19,8 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Welcome to Project Nutmeg</h1>
         </header>
-        <Main />
-      </div>
+          <Main />
+      </div>  
     )
   }
 }

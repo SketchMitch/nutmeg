@@ -1,7 +1,9 @@
 .Notify {
+    position:absolute;
+    bottom:0;
     width: 90%;
-    height: 40vh;
-    margin: 2rem;
+    height: 32vh;
+    margin: 0.5rem;
     padding: 0.5rem 0;
     background-color: lightgrey;
 }
