@@ -59,13 +59,14 @@ height:100%;
 
 .DataList {
     width: 90%;
-    height: 50vh;
+    height: 74vh;
     margin: none;
     padding: none;
     background-color: none;
     overflow-y: scroll;
     display: inline-block;
     background-color: white;
+    padding: 1vh;
 }
 
 .DataList table {

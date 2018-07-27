@@ -38,3 +38,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.App .fi-info {
+  font-size: 100%;
+  padding: 0 0.75rem;
+  color: gray;
+}
+
+.App .fi-info:hover { 
+  color: black;
+}

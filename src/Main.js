@@ -130,7 +130,7 @@ class Main extends Component {
               
 const main = {
     display: 'flex',
-    height: '100vh',
+    height: '94.5vh',
     // alignItems: 'stretch',
     color: '#0000ff',
 }
