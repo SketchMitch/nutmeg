@@ -131,8 +131,8 @@ const main = {
     display: 'flex',
     //height: '100%',
     height: '90vh',
-    color: '#0000ff',
-    background: 'url(http://sailrockdiversresort.com/wp-content/wp-uploads/2015/02/15-simon-web-design-5-cool-backgrounds-1600x900.jpg)',
+    color: 'red',
+    // background: 'url(http://sailrockdiversresort.com/wp-content/wp-uploads/2015/02/15-simon-web-design-5-cool-backgrounds-1600x900.jpg)',
 }
 
 const pane = {

@@ -25,6 +25,7 @@ const styles = {
         padding: '0.75rem 0',
         margin: '-.5rem 0 0 0',
         backgroundColor: 'lightgrey',
+        color: 'linear-gradient(to bottom black, purple, yellow)',
     },
 }
 

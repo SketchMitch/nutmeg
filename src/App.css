@@ -3,7 +3,7 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  //border: dotted 1px red;
+  /* border: dotted 1px red; */
   margin: 0;
   padding: 0;
 }
@@ -13,25 +13,18 @@ html {
 }
 
 body {
-  //line-height: 1.42857143;
+  line-height: 1.42857143;
   margin: 0 auto;
   min-width: 30rem;
 }
 
 .App {
   text-align: center;
+  height: 5vh;
 }
 
-.App-title {
-  font-family: 'Dancing Script', cursive;
-  font-size: 3rem;
-  font-weight: 700;
-  color: #666;   
-  background-color: #999;
-  height: 10vh;
-  padding: 1rem;
-  margin-bottom: 0;
-}
+
+
 
 .App .fi-info {
   font-size: 100%;
@@ -41,4 +34,22 @@ body {
 
 .App .fi-info:hover { 
   color: black;
+}
+
+.App .header {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+      background: linear-gradient(to bottom right, #335f80, #443380);
+      border-bottom: #dad2c7 solid 1px; 
+}
+
+.App .App-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #dad2c7;   
+  opacity: 1;
+  /* height: 10vh; */
+  padding: 0;
+  margin-bottom: 0;
+  /* opacity: 1; */
 }

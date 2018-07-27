@@ -16,8 +16,7 @@ const SideBar = ({ config, saveConfig, playOrPause, stop, status }) => {
 const style = {
     width: '22rem',
     height: '90vh',
-    position: 'relative',
-    
+    position: 'relative',   
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',

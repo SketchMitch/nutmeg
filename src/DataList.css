@@ -76,7 +76,8 @@ height:100%;
 
 .DataList thead {
     color: #dad2c7;
-    background-color: #43617d;
+    /* background-color: #43617d; */
+    background: linear-gradient(to bottom right, #335f80, #443380);
 }
 
 .DataList tbody {
