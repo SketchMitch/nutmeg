@@ -2,8 +2,6 @@ import React from 'react'
 import './Config.css'
 
 import timeFrames from './timeFrames'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 
 const Config = ({ config, saveConfig }) => {
 
@@ -16,12 +14,12 @@ const Config = ({ config, saveConfig }) => {
     return (
         <div className="Config">
             <form>
-                <div class="row">
-                    <div class="large-12 columns clearfix">
+                <div className="row">
+                    <div className="large-12 columns clearfix">
                         <label>
                             ASIN:
-                                <span data-tooltip class="right" title="Description">
-                                <i class="fi-info" ></i>
+                                <span data-tooltip className="right" title="Description">
+                                <i className="fi-info" ></i>
                             </span>
                             <input
                                 type="text"
@@ -32,11 +30,11 @@ const Config = ({ config, saveConfig }) => {
                         </label>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="large-12 columns">
+                <div className="row">
+                    <div className="large-12 columns">
                         <label>Interval:
-                        <span data-tooltip class="right" title="Description">
-                                <i class="fi-info" ></i>
+                        <span data-tooltip className="right" title="Description">
+                                <i className="fi-info" ></i>
                             </span>
                             <select name="interval" defaultValue={config.interval} onChange={handleChange}  >
                                 {timeFrames.map(op => <option key={op.id} value={op.value} >{op.title}</option>)}

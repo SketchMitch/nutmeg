@@ -120,7 +120,7 @@ class Main extends Component {
                 <div className='Pane' style={pane} >
                     <Status status={this.state.status} asin={this.state.config.asin} />
                     <DataList data={this.state.data} />
-                    <Export />
+                    <Export signOut={this.props.signOut} /> />
                 </div>
             </div>
         )

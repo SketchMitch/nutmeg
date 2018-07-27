@@ -1,25 +1,49 @@
 import React, { Component } from 'react'
 import './App.css'
+import { auth } from './base'
 import Main from './Main'
-
-/*
-import { library } from '@fortawesome/fontawesome-svg-core'
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlayCircle, faPauseCircle, faStopCircle } from '@fortawesome/free-solid-svg-icons'
-
-library.add(faPlayCircle)
-library.add(faPauseCircle)
-library.add(faStopCircle)
-*/
+import SignIn from './SignIn'
 
 class App extends Component {
+  state = {
+    uid: null,
+  }
+
+  componentDidMount() {
+    auth.onAuthStateChanged( ( user ) => {
+      if ( user ) {
+        this.handleAuth( user )
+      } else {
+        this.signOut()
+      }
+    })
+  }
+
+  handleAuth = ( user ) => {
+    this.setState({ uid: user.uid })
+  }
+
+  signedIn = () => {
+    return this.state.uid
+  }
+
+  signOut = () => {
+    console.log( this.state.uid )
+    this.setState({ uid: null })
+    auth.signOut()
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Welcome to Project Nutmeg</h1>
         </header>
-          <Main />
+        {
+          this.signedIn() 
+            ? <Main signOut={this.signOut} uid={this.state.uid} /> 
+            : <SignIn handleAuth={this.handleAuth} /> 
+        }
       </div>  
     )
   }
