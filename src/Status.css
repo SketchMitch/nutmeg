@@ -3,7 +3,8 @@
     width: 100%;
     margin: .5rem 0;
     padding: 0.75rem 0;
-    background-color: lightgrey;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #dad2c7;
 
     font-size: 125%;
     font-family: Fauna One;
@@ -15,7 +16,7 @@
 }
 
 .Status .label {
-    border: solid 2px red;
+    /* border: solid 2px red; */
 
     margin: 0;
     padding: .5rem;
