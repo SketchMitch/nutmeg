@@ -28,10 +28,8 @@ body {
   font-weight: 700;
   color: #666;   
   background-color: #999;
-}
-
-.App h1 {
   height: 10vh;
+  padding: 1rem;
   margin-bottom: 0;
 }
 

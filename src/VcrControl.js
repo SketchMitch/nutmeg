@@ -21,9 +21,9 @@ const VcrControl =  ({ playOrPause, stop, status }) => {
 
 const styles = {
     vcrControl: {
-        border: 'red dotted 2px',
-        width: '90%',
+        width: '95%',
         padding: '0.75rem 0',
+        margin: '-.5rem 0 0 0',
         backgroundColor: 'lightgrey',
     },
 }

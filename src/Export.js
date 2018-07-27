@@ -11,7 +11,7 @@ const Export = () => {
 const style = {
     position: 'absolute',
     bottom: 0,
-    width: '98%',
+    width: '100%',
     height: '10vh',
     margin: '1rem 0',
     padding: '0.5rem 0',
