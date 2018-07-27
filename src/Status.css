@@ -24,6 +24,20 @@
     padding: .5rem;
 }
 
-.static {
+.Status .static {
     width: 15rem;
+}
+
+.Status .infoblock2 {
+    color: red;
+    width: 50%;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.Status .infoblock1 {
+    width: 50%;
+    text-align: left;
+    padding: 0 10rem;
+    
 }

@@ -1,17 +1,15 @@
 import React from 'react'
 import './Status.css'
 
-const Status = ( { status, asin }  ) => {
-    return(
+const Status = ({ status, asin }) => {
+    return (
         <div className="Status" >
-            <p>
-                <span className="label" >Status:</span>
-                <span className="static" >{status}</span>
-            </p>
-            <p>
-                <span className="label" >ASIN:</span>
-                <span className="static" >{asin}</span>
-            </p>
+            <div className="infoblock2"> ASIN: {asin}
+            </div>
+
+            <div className="infoblock1"> Status: {status}
+            </div>
+
         </div>
     )
 }
