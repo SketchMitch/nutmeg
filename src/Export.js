@@ -9,7 +9,9 @@ const Export = () => {
 }
 
 const style = {
-    width: '90%',
+    position: 'absolute',
+    bottom: 0,
+    width: '98%',
     height: '10vh',
     margin: '1rem 0',
     padding: '0.5rem 0',
