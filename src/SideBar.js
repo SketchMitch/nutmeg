@@ -17,7 +17,7 @@ const style = {
     width: '22rem',
     height: '90vh',
     position: 'relative',
-    backgroundColor: '#ADD8E6',
+    
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
