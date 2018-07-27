@@ -130,14 +130,14 @@ class Main extends Component {
               
 const main = {
     display: 'flex',
-    height: '94.5vh',
+    height: '100%',
     // alignItems: 'stretch',
     color: '#0000ff',
+    backgroundColor: '#ADD8E6',
 }
 
 const pane = {
     width: '90%',
-    backgroundColor: '#ADD8E6',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
