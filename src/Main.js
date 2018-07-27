@@ -129,24 +129,16 @@ class Main extends Component {
               
 const main = {
     display: 'flex',
-<<<<<<< HEAD
-    height: '100%',
-    // alignItems: 'stretch',
-=======
     height: '90vh',
->>>>>>> cf64b371e2748ce98aa6617a01f0915137d992b6
     color: '#0000ff',
-    backgroundColor: '#ADD8E6',
+    // backgroundColor: '#ADD8E6',
+    background: 'url(http://sailrockdiversresort.com/wp-content/wp-uploads/2015/02/15-simon-web-design-5-cool-backgrounds-1600x900.jpg)',
 }
 
 const pane = {
-<<<<<<< HEAD
-    width: '90%',
-=======
     position: 'relative',
     width: '80%',
-    backgroundColor: '#ADD8E6',
->>>>>>> cf64b371e2748ce98aa6617a01f0915137d992b6
+
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'left',
