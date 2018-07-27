@@ -15,7 +15,7 @@ const style = {
     height: '10vh',
     margin: '1rem 0',
     padding: '0.5rem 0',
-    backgroundColor: 'lightgrey',
+    backgroundColor: '#bbbcc7',
 }
 
 export default Export

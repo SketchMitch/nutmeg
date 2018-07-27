@@ -2,13 +2,15 @@
     width: 95%;
     margin: .5rem 0;
     padding: 0.5rem 0;
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
+    background: linear-gradient(to bottom right, #dad2c7, #eeeff6);
 
     font-size: 125%;
     font-family: Fauna One;
     font-weight: 400;
 
     text-align: left;
+
 
 }
 
