@@ -1,17 +1,22 @@
 import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
+import { faSignOutAlt, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 
-const Export = ({ signOut }) => {
+const Export = ({ signOut, logUser }) => {
     return(
         <div className="Export" style={style.export} >
             Export
             <div className="signOut" style={style.signOut} >
-                <button onClick={signOut} style={style.button} >
+                <button onClick={signOut} style={style.btnSignout} >
                     <FontAwesomeIcon icon={ faSignOutAlt } size="3x"  />
                 </button>
+        
+                <button onClick={logUser} style={style.btnLogUser} >
+                    <FontAwesomeIcon icon={ faCheckCircle } size="3x"  />
+                </button>
             </div>
+
         </div>
     )
 }
@@ -31,10 +36,14 @@ const style = {
         width: '100%',
         height: '100%',
     },
-    button: {
+    btnSignout: {
         position: 'absolute',
         right: '1.5rem',
-    }
+    },
+    btnLogUser: {
+        position: 'absolute',
+        left: '1.5rem',
+    },
 }
 
 

@@ -8,6 +8,8 @@ import Export from './Export'
 import State from './State'
 
 import axios from 'axios';
+import { auth } from './base'
+
 //import samples from './samples'
 
 
@@ -81,8 +83,8 @@ class Main extends Component {
 
     queryASIN = async  ( ) => {
         try {
-            //const url = 'http://localhost:3001/scrape/' + this.state.config.asin
-            const url = 'https://asin-trac.herokuapp.com/scrape/' + this.state.config.asin
+            const url = process.env.REACT_APP_ASINTRAC_URL + this.state.config.asin
+            console.log( url )
             await axios.get( url )
                 .then(( response ) => {
                     // handle success
@@ -106,6 +108,29 @@ class Main extends Component {
             console.log( error )
         }
     }
+
+    logUser = () => {
+        
+        auth.onAuthStateChanged(( user ) => {
+            if (user) {
+                // User is signed in.
+                const data = {
+                    displayName: user.displayName,
+                    email: user.email,
+                    emailVerified: user.emailVerified,
+                    photoURL: user.photoURL,
+                    isAnonymous: user.isAnonymous,
+                    uid: user.uid,
+                    providerData: user.providerData,
+                }
+                console.log( data )
+            } else {
+                // User is signed out.
+                // ...
+                console.log( 'User is signed out!' )
+            }
+        })
+    }
     
     render() {
         return (
@@ -120,7 +145,7 @@ class Main extends Component {
                 <div className='Pane' style={pane} >
                     <Status status={this.state.status} asin={this.state.config.asin} />
                     <DataList data={this.state.data} />
-                    <Export signOut={this.props.signOut} /> />
+                    <Export signOut={this.props.signOut} logUser={this.logUser} /> />
                 </div>
             </div>
         )

@@ -25,7 +25,7 @@ const SignIn = ({ handleAuth }) => {
                 </button>
             </main>
         </div>
-                )
+    )
 }
 
 export default SignIn
