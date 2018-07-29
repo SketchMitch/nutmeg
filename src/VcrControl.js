@@ -13,8 +13,8 @@ const VcrControl =  ({ playOrPause, stop, status }) => {
 
     return (
         <div className="VcrControl" style={styles.vcrControl} >
-            <FontAwesomeIcon icon={ status === State.PLAY ? faPauseCircle : faPlayCircle } size="5x" onClick={handleClick} />
-            <FontAwesomeIcon icon={ faStopCircle } size="5x" onClick={stop}/>
+            <FontAwesomeIcon icon={ status === State.PLAY ? faPauseCircle : faPlayCircle } size="4x" onClick={handleClick} />
+            <FontAwesomeIcon icon={ faStopCircle } size="4x" onClick={stop}/>
         </div>
     )
 }

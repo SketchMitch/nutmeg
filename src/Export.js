@@ -13,11 +13,11 @@ const Export = ({ signOut, logUser }) => {
             </div>
             <div className="signOut" style={style.signOut} >
                 <button onClick={signOut} style={style.btnSignout} >
-                    <FontAwesomeIcon icon={ faSignOutAlt } size="3x"  />
+                    <FontAwesomeIcon icon={ faSignOutAlt } size="2x"  />
                 </button>
         
                 <button onClick={logUser} style={style.btnLogUser} >
-                    <FontAwesomeIcon icon={ faCheckCircle } size="3x"  />
+                    <FontAwesomeIcon icon={ faCheckCircle } size="2x"  />
                 </button>
             </div>
 
@@ -47,12 +47,12 @@ const style = {
     btnSignout: {
         position: 'absolute',
         right: '1.5rem',
-        bottom: '1rem',
+        bottom: '.5rem',
     },
     btnLogUser: {
         position: 'absolute',
         left: '1.5rem',
-        bottom: '1rem',
+        bottom: '.5rem',
     },
 }
 
