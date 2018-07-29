@@ -6,7 +6,11 @@ import { faSignOutAlt, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 const Export = ({ signOut, logUser }) => {
     return(
         <div className="Export" style={style.export} >
-            Export
+            <div className="desc" style={style.desc} >
+                Export
+                <br />
+                Coming soon!
+            </div>
             <div className="signOut" style={style.signOut} >
                 <button onClick={signOut} style={style.btnSignout} >
                     <FontAwesomeIcon icon={ faSignOutAlt } size="3x"  />
@@ -36,13 +40,19 @@ const style = {
         width: '100%',
         height: '100%',
     },
+    desc: {
+        position: 'absolute',
+        width: '100%',
+    },
     btnSignout: {
         position: 'absolute',
         right: '1.5rem',
+        bottom: '1rem',
     },
     btnLogUser: {
         position: 'absolute',
         left: '1.5rem',
+        bottom: '1rem',
     },
 }
 
