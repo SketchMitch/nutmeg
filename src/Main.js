@@ -145,7 +145,7 @@ class Main extends Component {
                 <div className='Pane' style={pane} >
                     <Status status={this.state.status} asin={this.state.config.asin} />
                     <DataList data={this.state.data} />
-                    <Export signOut={this.props.signOut} logUser={this.logUser} /> />
+                    <Export signOut={this.props.signOut} logUser={this.logUser} />
                 </div>
             </div>
         )
