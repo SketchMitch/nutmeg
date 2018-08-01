@@ -19,14 +19,16 @@ const SignIn = ({ handleAuth }) => {
             <main className="card see-thru" >
                 <h3>Do you need to monitor an Amazon listing?</h3>
                 <p>Use project Nutmeg to automagically track the buy box of a listing.</p>
-                <button className="github" onClick={() => authenticate(githubProvider)} >
-                    <FontAwesomeIcon icon={ faGithub } size="2x" />
-                    Sign in with GitHub
-                </button>
-                <button className="google" onClick={() => authenticate(googleProvider)} >
-                    <img src={googleLogo} alt="" />
-                    Sign in with Google
-                </button>
+                <div className="signin-list" >
+                    <button className="github" onClick={() => authenticate(githubProvider)} >
+                        <FontAwesomeIcon icon={ faGithub } size="1x" />
+                        Sign in with GitHub
+                    </button>
+                    <button className="google" onClick={() => authenticate(googleProvider)} >
+                        <img src={googleLogo} alt="" />
+                        Sign in with Google
+                    </button>
+                </div>
             </main>
         </div>
     )

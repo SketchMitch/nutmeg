@@ -28,7 +28,6 @@ class App extends Component {
   }
 
   signOut = () => {
-    console.log( this.state.uid )
     this.setState({ uid: null })
     auth.signOut()
   }
