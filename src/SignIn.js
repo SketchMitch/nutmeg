@@ -18,7 +18,7 @@ const SignIn = ({ handleAuth }) => {
             <div className="blur-bgimage" ></div>
             <main className="card see-thru" >
                 <h3>Do you need to monitor an Amazon listing?</h3>
-                <p>Use project Nutmeg to automagically track the buy box of your listing.</p>
+                <p>Use project Nutmeg to automagically track the buy box of a listing.</p>
                 <button className="github" onClick={() => authenticate(githubProvider)} >
                     <FontAwesomeIcon icon={ faGithub } size="2x" />
                     Sign in with GitHub
