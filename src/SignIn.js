@@ -4,6 +4,9 @@ import './SignIn.css'
 import googleLogo from './assets/media/google.svg'
 import { githubProvider, auth, googleProvider } from './base'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
 
 const SignIn = ({ handleAuth }) => {
     const authenticate = (provider) => {
@@ -12,11 +15,12 @@ const SignIn = ({ handleAuth }) => {
 
     return (
         <div className="SignIn">
-            <main>
+            <div className="blur-bgimage" ></div>
+            <main className="card see-thru" >
                 <h3>Do you need to monitor an Amazon listing?</h3>
                 <p>Use project Nutmeg to automagically track the buy box of your listing.</p>
                 <button className="github" onClick={() => authenticate(githubProvider)} >
-                    <i className="fab fa-github"></i>
+                    <FontAwesomeIcon icon={ faGithub } size="2x" />
                     Sign in with GitHub
                 </button>
                 <button className="google" onClick={() => authenticate(googleProvider)} >
