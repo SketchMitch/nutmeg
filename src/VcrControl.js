@@ -27,6 +27,30 @@ const styles = {
         backgroundColor: '#bbbcc7',
         color: 'linear-gradient(to bottom black, purple, yellow)',
     },
+    button: {
+        after: {
+            content: "",
+            background: "#90EE90",
+            display: "block",
+            position: "absolute",
+            paddingTop: "300%",
+            paddingLeft: "350%",
+            marginLeft: "-20px!important",
+            marginTop: "-120%",
+            opacity: 0,
+            transition: "all 0.8s",
+        },
+    },
+    button: {
+        active: {
+            after: {
+                padding: 0,
+                margin: 0,
+                opacity: 1,
+                transition: "0s",
+            }
+        }
+    }
 }
 
 export default VcrControl

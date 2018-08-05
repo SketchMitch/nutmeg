@@ -73,7 +73,8 @@ height:100%;
 .DataList table {
     border-collapse: collapse;
     background-color: none;
-    width: 100%;     
+    width: 100%; 
+     
 }
 
 .DataList thead {
@@ -81,6 +82,8 @@ height:100%;
     /* background-color: #43617d; */
     background: linear-gradient(to bottom right, #335f80, #443380);
     margin: 5px;
+    text-align: center; 
+    vertical-align: middle; 
 }
 
 .DataList tbody {

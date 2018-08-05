@@ -15,30 +15,23 @@ const DataList = ({ data, showWait }) => {
             <table>
                 <thead id="labels">
                     <tr>
-                        <th>Time</th>
-                        <th>ASIN</th>
-                        <th>Title</th>
-                        <th>Price</th>                    
-                        <th>Seller</th>
+                        <th style={{ textAlign: "center", verticalAlign: "middle"}}>Time</th>
+                        <th style={{ textAlign: "center", verticalAlign: "middle"}}>ASIN</th>
+                        <th style={{ textAlign: "center", verticalAlign: "middle"}}>Title</th>
+                        <th style={{ textAlign: "center", verticalAlign: "middle"}}>Price</th>                    
+                        <th style={{ textAlign: "center", verticalAlign: "middle"}}>Seller</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {/* <tr className="labels">
-                        <th>Time</th>
-                        <th>ASIN</th>
-                        <th>Title</th>
-                        <th>Price</th>                    
-                        <th>Seller</th>
-                    </tr> */}
                     {
-                        data.map((res, i) => {
+                        data.map( (res, i) => {
                             return (
                                 <tr key={ i }>
-                                    <td>{res.timestamp}</td>
-                                    <td>{res.asin} </td>
-                                    <td>{res.title}</td>
-                                    <td>{res.price}</td>
-                                    <td>{res.seller}</td>
+                                    <td style={{ textAlign: "center", verticalAlign: "middle"}}>{res.timestamp}</td>
+                                    <td style={{ textAlign: "center", verticalAlign: "middle"}}>{res.asin} </td>
+                                    <td style={{ textAlign: "center", verticalAlign: "middle"}}>{res.title}</td>
+                                    <td style={{ textAlign: "center", verticalAlign: "middle"}}>{res.price}</td>
+                                    <td style={{ textAlign: "center", verticalAlign: "middle"}}>{res.seller}</td>
                                 </tr>
                             )
                         })

@@ -1,4 +1,4 @@
-import React, {Component}from 'react'
+import React, {Component} from 'react'
 
 import SideBar from './SideBar'
 import Status from './Status'

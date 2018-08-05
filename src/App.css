@@ -23,9 +23,6 @@ body {
   height: 5vh;
 }
 
-
-
-
 .App .fi-info {
   font-size: 100%;
   padding: 0 0.75rem;
@@ -40,6 +37,8 @@ body {
   /* background-color: rgba(0, 0, 0, 0.5); */
       background: linear-gradient(to bottom right, #335f80, #443380);
       border-bottom: #dad2c7 solid 1px; 
+      margin: -1px 0;
+      padding: 0;
 }
 
 .App .App-title {
