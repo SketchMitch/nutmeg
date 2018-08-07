@@ -1,0 +1,39 @@
+
+.export {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #bbbcc7;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.export .btn-set {
+    height: 100%;
+    width: 67%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.export .export-set {
+    width: 33%;
+    justify-content: flex-start;
+}
+
+.export .btn {
+    border: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+        -mozTransition: background 0.2s;
+        -webkitTansition: background 0.2s;
+        -oTransition: background 0.2s;
+    width: 5rem;
+    height: 100%;
+    bottom: .5rem;
+}

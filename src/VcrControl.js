@@ -41,7 +41,7 @@ const styles = {
             transition: "all 0.8s",
         },
     },
-    button: {
+    /*button: {
         active: {
             after: {
                 padding: 0,
@@ -50,7 +50,7 @@ const styles = {
                 transition: "0s",
             }
         }
-    }
+    }*/
 }
 
 export default VcrControl

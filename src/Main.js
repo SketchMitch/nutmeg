@@ -9,6 +9,7 @@ import State from './State'
 
 import axios from 'axios';
 import { auth } from './base'
+import { exportCSVFile } from './exportCSV'
 
 //import samples from './samples'
 
@@ -109,6 +110,12 @@ class Main extends Component {
         }
     }
 
+    download = () => {
+        let tmpHeader = [ "Time","ASIN","Title","Price","Seller" ]
+
+        exportCSVFile( tmpHeader, this.state.data, "nutmeg.download" ) 
+    }
+    
     logUser = () => {
         
         auth.onAuthStateChanged(( user ) => {
@@ -149,7 +156,7 @@ class Main extends Component {
                 <div className='Pane' style={pane} >
                     <Status status={this.state.status} asin={this.state.config.asin} />
                     <DataList data={this.state.data} showWait={this.showWait} />
-                    <Export signOut={this.props.signOut} logUser={this.logUser} />
+                    <Export download={this.download} signOut={this.props.signOut} logUser={this.logUser} />
                 </div>
             </div>
         )

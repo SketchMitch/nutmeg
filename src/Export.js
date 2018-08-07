@@ -1,60 +1,30 @@
 import React from 'react'
+import './Export.css'
+import { CSVDownload } from 'react-csv'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSignOutAlt, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import { faSignOutAlt, faCheckCircle, faFileDownload } from '@fortawesome/free-solid-svg-icons'
 
-const Export = ({ signOut, logUser }) => {
+const Export = ({ download, signOut, logUser }) => {
     return(
-        <div className="Export" style={style.export} >
-            <div className="desc" style={style.desc} >
-                Export
-                <br />
-                Coming soon!
-            </div>
-            <div className="signOut" style={style.signOut} >
-                <button onClick={signOut} style={style.btnSignout} >
-                    <FontAwesomeIcon icon={ faSignOutAlt } size="2x"  />
+        <div className="export" >
+            <div className="btn-set export-set">
+                <button className="btn" onClick={download} >
+                    <FontAwesomeIcon icon={ faFileDownload } size="2x"  />
                 </button>
+            </div>
         
-                <button onClick={logUser} style={style.btnLogUser} >
+            <div className="btn-set" >
+                <button className="btn" onClick={logUser} >
                     <FontAwesomeIcon icon={ faCheckCircle } size="2x"  />
                 </button>
+                
+                <button className="btn" onClick={signOut} >
+                    <FontAwesomeIcon icon={ faSignOutAlt } size="2x"  />
+                </button>
             </div>
-
         </div>
     )
 }
-
-const style = {
-    export: {
-        position: 'absolute',
-        bottom: 0,
-        width: '100%',
-        height: '10vh',
-        margin: '1rem 0',
-        padding: '0.5rem 0',
-        backgroundColor: '#bbbcc7',
-    },
-    signOut: {
-        position: 'relative',
-        width: '100%',
-        height: '100%',
-    },
-    desc: {
-        position: 'absolute',
-        width: '100%',
-    },
-    btnSignout: {
-        position: 'absolute',
-        right: '1.5rem',
-        bottom: '.5rem',
-    },
-    btnLogUser: {
-        position: 'absolute',
-        left: '1.5rem',
-        bottom: '.5rem',
-    },
-}
-
 
 export default Export
