@@ -1,6 +1,5 @@
 import React from 'react'
 import './Export.css'
-import { CSVDownload } from 'react-csv'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignOutAlt, faCheckCircle, faFileDownload } from '@fortawesome/free-solid-svg-icons'
