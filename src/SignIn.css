@@ -64,10 +64,8 @@
 .SignIn button {
   display: flex;
   align-items: center;
-  border: 0;
+  justify-content: center;
   border-radius: 0.5rem;
-  cursor: pointer;
-  //margin: 2.5rem auto 1.2rem;
   margin: 0 auto;
   padding: 1rem;
   transition: background 0.2s;
@@ -79,6 +77,11 @@
   font-weight: 400;
 }
 
+.SignIn button:hover {
+  box-shadow: 5px 5px 7px #aaaaaa;
+  cursor: pointer;
+}
+
 .SignIn button:focus {
   outline: none;
 }
@@ -88,8 +91,9 @@
 }
 
 .SignIn button.github {
+  border: 1px solid #dad2c7;
   background-color: #444;
-  color: white;
+  color: #dad2c7;
 }
 
 .SignIn button.github i.fab, .SignIn button.github .svg {

@@ -25,11 +25,14 @@ class SignInModal extends React.Component {
     }
 
     openModal = () => {
-        this.setState({modalIsOpen: true});
+        this.setState({
+            modalIsOpen: true,
+            error: null
+        });
     }
 
     closeModal = () => {
-        this.setState({modalIsOpen: false});
+        this.setState({ modalIsOpen: false });
     }
 
     logIn = () => {
