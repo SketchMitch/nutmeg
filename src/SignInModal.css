@@ -1,0 +1,134 @@
+.SignInModal button {
+    display: flex;
+    align-items: center;
+    border: 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 2.5rem auto 1.2rem;
+    transition: background 0.2s;
+        -moz-transition: background 0.2s;
+        -webkit-transition: background 0.2s;
+        -o-transition: background 0.2s;
+    font-family: 'helvetica neue', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: .75rem;
+}
+
+.SignInModal button.email {
+    background-color: #444;
+    color: #dad2c7;
+}
+
+.SignInModal button.email content {
+    margin-right: 0.5rem;
+}
+
+.SignInModal button.email i.fab, .SignInModal button.email .svg {
+    margin: 0.2rem 0.5rem 0.2rem 0;
+}
+
+.overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform : translate(-50%, -50%);
+    z-index: 9999;
+    width: 72%;
+    border: solid 2px gray;
+    border-radius: 25px;
+    color: #dad2c7;
+    background: linear-gradient(to right bottom, rgba(51, 95, 128, 0.82) , rgba(68, 51, 128, 0.95));align-self: auto;
+
+    animation: show .5s ease;
+    overflow-x: hidden;
+    overflow-y: auto;
+ }
+
+.modal-content .x-button  {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.modal-content svg.svg-inline--fa {
+    margin: 0.5rem;
+}
+
+.modal-content svg.svg-inline--fa:hover {
+    box-shadow: 5px 5px 7px #aaaaaa;
+    border-radius: 50%;
+}
+
+.modal-content .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+}
+
+.modal-content .login-container h3 {
+    font-family: "Fauna One";
+    margin: 0 auto  1rem;
+    font-weight: 700;
+    color: #dad2c7;
+}
+  
+.modal-content .login-container label {
+    padding: .50rem;
+    
+    font-size: 114%;
+    font-family: Fauna One;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+.modal-content .login-container .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+}
+
+.modal-content .login-container input {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 300;
+
+    padding: 1.5rem .75rem;
+    width: 85%;
+}
+
+.modal-content .buttons  {
+    width: 100%;  
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+}
+
+.modal-content .buttons button {
+   
+    border-radius: 0.5rem;
+    border: solid 1px #dad2c7;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #dad2c7;
+    width: 7rem;
+
+    cursor: pointer;
+    margin: 0.75rem auto;
+    //margin: 0.5rem 1rem;
+    padding: 1rem;
+    transition: background 0.2s;
+        -moz-transition: background 0.2s;
+        -webkit-transition: background 0.2s;
+        -o-transition: background 0.2s;
+    font-family: 'helvetica neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}

@@ -13,7 +13,6 @@ import { exportCSVFile } from './exportCSV'
 
 //import samples from './samples'
 
-
 class Main extends Component {
     constructor() {
         super()
@@ -86,7 +85,8 @@ class Main extends Component {
         try {
             const url = process.env.REACT_APP_ASINTRAC_URL + this.state.config.asin
             console.log( url )
-            await axios.get( url )
+            await axios
+                .get( url )
                 .then(( response ) => {
                     // handle success
                     const tmpData = [...this.state.data]
